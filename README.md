@@ -104,8 +104,11 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 
 ### [BONUS] Interactive Prototype
 <img src="/images/eatstagram.gif" height="500">
+
 ## Schema 
+
 ### Models
+
 #### Post
 
    | Property      | Type     | Description |
