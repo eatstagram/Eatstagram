@@ -6,6 +6,8 @@ Group Project - Eatstagram README
 1. [Overview](#Overview)
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
+5. [Networking](#Networking)
 
 ## Overview
 ### Description
@@ -108,7 +110,6 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 ## Schema 
 
 ### Models
-
 #### Post
 
    | Property      | Type     | Description |
