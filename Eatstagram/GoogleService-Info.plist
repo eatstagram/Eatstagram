@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>626781299556-idmfc3ad8dvpiaoa5f99horc55nmgnol.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.626781299556-idmfc3ad8dvpiaoa5f99horc55nmgnol</string>
+	<key>API_KEY</key>
+	<string>AIzaSyApelK86fJmv0UndsRLx4u8g-NJCc1Ak1A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>626781299556</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kimlenghor.Eatstagram</string>
+	<key>PROJECT_ID</key>
+	<string>eatstagram-c5ab7</string>
+	<key>STORAGE_BUCKET</key>
+	<string>eatstagram-c5ab7.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:626781299556:ios:0b29cba4ee957494</string>
+	<key>DATABASE_URL</key>
+	<string>https://eatstagram-c5ab7.firebaseio.com</string>
+</dict>
+</plist>

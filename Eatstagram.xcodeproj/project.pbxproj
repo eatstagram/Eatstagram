@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		573883BD2B98C1D954B0EB56 /* Pods_EatstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE2DBF347D57C11D4AFA370 /* Pods_EatstagramUITests.framework */; };
+		5BE2AD23193345B94063E6C8 /* Pods_Eatstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */; };
 		5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D2225EA54400D6A56B /* AppDelegate.swift */; };
-		5CBB82D5225EA54400D6A56B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D4225EA54400D6A56B /* ViewController.swift */; };
+		5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D4225EA54400D6A56B /* SignupViewController.swift */; };
 		5CBB82D8225EA54400D6A56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB82D6225EA54400D6A56B /* Main.storyboard */; };
 		5CBB82DA225EA54600D6A56B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB82D9225EA54600D6A56B /* Assets.xcassets */; };
 		5CBB82DD225EA54600D6A56B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB82DB225EA54600D6A56B /* LaunchScreen.storyboard */; };
 		5CBB82E8225EA54600D6A56B /* EatstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82E7225EA54600D6A56B /* EatstagramTests.swift */; };
 		5CBB82F3225EA54600D6A56B /* EatstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82F2225EA54600D6A56B /* EatstagramUITests.swift */; };
+		5CBB8303225EA68700D6A56B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB8302225EA68700D6A56B /* GoogleService-Info.plist */; };
+		5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB8304225EBB9100D6A56B /* LoginViewController.swift */; };
+		9A86383ED432DA67BB6AA0F4 /* Pods_EatstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633E40346B0BC9A9E4BA230E /* Pods_EatstagramTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FE2DBF347D57C11D4AFA370 /* Pods_EatstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2040057BC59B5CC472E81AA8 /* Pods-Eatstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eatstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram.debug.xcconfig"; sourceTree = "<group>"; };
+		4193B2C0B892C53FE861C767 /* Pods-EatstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramTests/Pods-EatstagramTests.release.xcconfig"; sourceTree = "<group>"; };
+		550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eatstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBB82CF225EA54400D6A56B /* Eatstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBB82D2225EA54400D6A56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5CBB82D4225EA54400D6A56B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CBB82D4225EA54400D6A56B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		5CBB82D7225EA54400D6A56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5CBB82D9225EA54600D6A56B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CBB82DC225EA54600D6A56B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,13 @@
 		5CBB82EE225EA54600D6A56B /* EatstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EatstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBB82F2225EA54600D6A56B /* EatstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatstagramUITests.swift; sourceTree = "<group>"; };
 		5CBB82F4225EA54600D6A56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CBB8302225EA68700D6A56B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5CBB8304225EBB9100D6A56B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		633E40346B0BC9A9E4BA230E /* Pods_EatstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8A4114FE1D9B6F5E475A5C /* Pods-EatstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramUITests/Pods-EatstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC60270473746488988A30C4 /* Pods-EatstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramTests/Pods-EatstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B867723D2FB6F7D2C07DC8DA /* Pods-Eatstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eatstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram.release.xcconfig"; sourceTree = "<group>"; };
+		CD48B8F0EA46A3DF4BA2EEF8 /* Pods-EatstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramUITests/Pods-EatstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE2AD23193345B94063E6C8 /* Pods_Eatstagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A86383ED432DA67BB6AA0F4 /* Pods_EatstagramTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573883BD2B98C1D954B0EB56 /* Pods_EatstagramUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		238FEF20044FA384991EF479 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */,
+				633E40346B0BC9A9E4BA230E /* Pods_EatstagramTests.framework */,
+				0FE2DBF347D57C11D4AFA370 /* Pods_EatstagramUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5CBB82C6225EA54400D6A56B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +110,8 @@
 				5CBB82E6225EA54600D6A56B /* EatstagramTests */,
 				5CBB82F1225EA54600D6A56B /* EatstagramUITests */,
 				5CBB82D0225EA54400D6A56B /* Products */,
+				64636FA0D58C5EECB83563C4 /* Pods */,
+				238FEF20044FA384991EF479 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				5CBB82D2225EA54400D6A56B /* AppDelegate.swift */,
-				5CBB82D4225EA54400D6A56B /* ViewController.swift */,
+				5CBB82D4225EA54400D6A56B /* SignupViewController.swift */,
+				5CBB8304225EBB9100D6A56B /* LoginViewController.swift */,
 				5CBB82D6225EA54400D6A56B /* Main.storyboard */,
 				5CBB82D9225EA54600D6A56B /* Assets.xcassets */,
 				5CBB82DB225EA54600D6A56B /* LaunchScreen.storyboard */,
+				5CBB8302225EA68700D6A56B /* GoogleService-Info.plist */,
 				5CBB82DE225EA54600D6A56B /* Info.plist */,
 			);
 			path = Eatstagram;
@@ -125,6 +158,19 @@
 			path = EatstagramUITests;
 			sourceTree = "<group>";
 		};
+		64636FA0D58C5EECB83563C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2040057BC59B5CC472E81AA8 /* Pods-Eatstagram.debug.xcconfig */,
+				B867723D2FB6F7D2C07DC8DA /* Pods-Eatstagram.release.xcconfig */,
+				AC60270473746488988A30C4 /* Pods-EatstagramTests.debug.xcconfig */,
+				4193B2C0B892C53FE861C767 /* Pods-EatstagramTests.release.xcconfig */,
+				8A8A4114FE1D9B6F5E475A5C /* Pods-EatstagramUITests.debug.xcconfig */,
+				CD48B8F0EA46A3DF4BA2EEF8 /* Pods-EatstagramUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CBB82F7225EA54600D6A56B /* Build configuration list for PBXNativeTarget "Eatstagram" */;
 			buildPhases = (
+				E116E774AE76A67F20622210 /* [CP] Check Pods Manifest.lock */,
 				5CBB82CB225EA54400D6A56B /* Sources */,
 				5CBB82CC225EA54400D6A56B /* Frameworks */,
 				5CBB82CD225EA54400D6A56B /* Resources */,
+				E24B7972D27BC91EC7DA3437 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CBB82FA225EA54600D6A56B /* Build configuration list for PBXNativeTarget "EatstagramTests" */;
 			buildPhases = (
+				4A2993CFDB046D0657D104B9 /* [CP] Check Pods Manifest.lock */,
 				5CBB82DF225EA54600D6A56B /* Sources */,
 				5CBB82E0225EA54600D6A56B /* Frameworks */,
 				5CBB82E1225EA54600D6A56B /* Resources */,
@@ -167,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CBB82FD225EA54600D6A56B /* Build configuration list for PBXNativeTarget "EatstagramUITests" */;
 			buildPhases = (
+				CE57E2159C7328BF6AA2BCA3 /* [CP] Check Pods Manifest.lock */,
 				5CBB82EA225EA54600D6A56B /* Sources */,
 				5CBB82EB225EA54600D6A56B /* Frameworks */,
 				5CBB82EC225EA54600D6A56B /* Resources */,
@@ -230,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CBB82DD225EA54600D6A56B /* LaunchScreen.storyboard in Resources */,
+				5CBB8303225EA68700D6A56B /* GoogleService-Info.plist in Resources */,
 				5CBB82DA225EA54600D6A56B /* Assets.xcassets in Resources */,
 				5CBB82D8225EA54400D6A56B /* Main.storyboard in Resources */,
 			);
@@ -251,12 +302,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A2993CFDB046D0657D104B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EatstagramTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE57E2159C7328BF6AA2BCA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EatstagramUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E116E774AE76A67F20622210 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Eatstagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E24B7972D27BC91EC7DA3437 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5CBB82CB225EA54400D6A56B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CBB82D5225EA54400D6A56B /* ViewController.swift in Sources */,
+				5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */,
+				5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */,
 				5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +577,7 @@
 		};
 		5CBB82F8225EA54600D6A56B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2040057BC59B5CC472E81AA8 /* Pods-Eatstagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +596,7 @@
 		};
 		5CBB82F9225EA54600D6A56B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B867723D2FB6F7D2C07DC8DA /* Pods-Eatstagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +615,7 @@
 		};
 		5CBB82FB225EA54600D6A56B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC60270473746488988A30C4 /* Pods-EatstagramTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +637,7 @@
 		};
 		5CBB82FC225EA54600D6A56B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4193B2C0B892C53FE861C767 /* Pods-EatstagramTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +659,7 @@
 		};
 		5CBB82FE225EA54600D6A56B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8A4114FE1D9B6F5E475A5C /* Pods-EatstagramUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +680,7 @@
 		};
 		5CBB82FF225EA54600D6A56B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD48B8F0EA46A3DF4BA2EEF8 /* Pods-EatstagramUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
