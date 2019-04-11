@@ -7,7 +7,6 @@ Group Project - Eatstagram README
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
-5. [Networking](#Networking)
 
 ## Overview
 ### Description
