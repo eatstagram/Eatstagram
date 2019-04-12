@@ -103,10 +103,11 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 ### [BONUS] Digital Wireframes & Mockups 
 <img src="/images/eatstagram.jpeg" width=1000>
 
-#Progress
-<img src="/images/interactive.gif" height="500">
 
 ### [BONUS] Interactive Prototype
+<img src="/images/interactive.gif" height="500">
+
+### Progress
 <img src="/images/eatstagram.gif" height="500">
 
 ## Schema 
