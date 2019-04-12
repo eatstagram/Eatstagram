@@ -108,8 +108,8 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 <img src="/images/interactiveI.gif" height="500">
 
 ### Progress So Far
-Users are able to create a new account.
-Users are able to log in based on the account that has been created.
+* Users are able to create a new account.
+* Users are able to log in based on the account that has been created.
 
 <img src="/images/eatstagram.gif" height="500">
 
