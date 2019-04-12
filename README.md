@@ -26,25 +26,25 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 
 **Required Must-have Stories**
 
-* User can create a new account
-* User can login
-* User can post a new photo of food
-* User can add details and location about the food
-* User can view a feed of food photos
-* User can like a food photo
-* User can add a comment to a photo
-* User can view details of a food photo they select
-* User can view all the pictures they uploaded on their profile
+* [x]User can create a new account
+* [x]User can login
+* [ ]User can post a new photo of food
+* [ ]User can add details and location about the food
+* [ ]User can view a feed of food photos
+* [ ]User can like a food photo
+* [ ]User can add a comment to a photo
+* [ ]User can view details of a food photo they select
+* [ ]User can view all the pictures they uploaded on their profile
 
 **Optional Nice-to-have Stories**
 
-* User can edit food details of food they had posted
-* User can delete food picture and details posted by the user
-* User can search for food or location
-* User can see notifications when their photo is liked
-* User can see a list of those who liked their photos
-* User can view other user’s profiles and see their photo feed
-* User can change Settings of the app
+* [ ]User can edit food details of food they had posted
+* [ ]User can delete food picture and details posted by the user
+* [ ]User can search for food or location
+* [ ]User can see notifications when their photo is liked
+* [ ]User can see a list of those who liked their photos
+* [ ]User can view other user’s profiles and see their photo feed
+* [ ]User can change Settings of the app
 
 ### 2. Screen Archetypes
 
@@ -107,12 +107,15 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 ### [BONUS] Interactive Prototype
 <img src="/images/interactiveI.gif" height="500">
 
-### Progress
+### Progress So Far
+Users are able to create a new account.
+Users are able to log in based on the account that has been created.
+
 <img src="/images/eatstagram.gif" height="500">
 
 ## Schema 
 
-### Models
+### Data Models
 #### Post
 
    | Property      | Type     | Description |
