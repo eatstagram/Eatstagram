@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var gradientView: UIView!
     
-    
+    //private
     fileprivate let loginHUD = JGProgressHUD(style: .dark)
     
     override func viewDidLoad() {
