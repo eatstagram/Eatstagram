@@ -22,51 +22,38 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var closeButton: UIButton!
     
+    //Variables
     fileprivate let signupHUD = JGProgressHUD(style: .dark)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupLayout()
+    }
+    
+    //put gradient for top view and style the buttons
+    fileprivate func setupLayout() {
         signupButton.layer.cornerRadius = 5
         signupButton.layer.borderWidth = 1
         signupButton.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        createGradientLayer()
-    }
-    
-    var gradientLayer: CAGradientLayer!
-    
-    func createGradientLayer() {
-        gradientLayer = CAGradientLayer()
-        gradientLayer.frame = self.gradientView.bounds
-        gradientLayer.colors = [#colorLiteral(red: 0.1568627451, green: 0.1960784314, blue: 0.5725490196, alpha: 1).cgColor, #colorLiteral(red: 1, green: 0.3725490196, blue: 0.4274509804, alpha: 1).cgColor]
-        self.gradientView.layer.addSublayer(gradientLayer)
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+        createGradientLayer(gradientView: gradientView)
         gradientView.bringSubviewToFront(logoImageView)
         gradientView.bringSubviewToFront(closeButton)
     }
     
+    //register user with email and password
     fileprivate func performRegistration() {
         guard let email = emailTextField.text, let password = passwordTextField.text else {return}
         Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
             if let error = error {
                 print(error)
-                self.showHUDWithError(error: error)
+                showHUDWithError(error: error, text: "Failed registration", view: self.view, existHud: self.signupHUD)
                 return
             }
             
             self.signupHUD.dismiss()
             //print("Successfully create user ", result?.user.uid)
         }
-    }
-    
-    fileprivate func showHUDWithError(error: Error) {
-        signupHUD.dismiss()
-        let hud = JGProgressHUD(style: .dark)
-        hud.textLabel.text = "Failed registration"
-        hud.detailTextLabel.text = error.localizedDescription
-        hud.show(in: self.view)
-        hud.dismiss(afterDelay: 3)
     }
     
     //Actions

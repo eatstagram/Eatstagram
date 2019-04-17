@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		573883BD2B98C1D954B0EB56 /* Pods_EatstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE2DBF347D57C11D4AFA370 /* Pods_EatstagramUITests.framework */; };
 		5BE2AD23193345B94063E6C8 /* Pods_Eatstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */; };
+		5C248BE92267E51E00C660B9 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C248BE82267E51E00C660B9 /* DesignView.swift */; };
+		5C248BED2267E70300C660B9 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C248BEC2267E70300C660B9 /* HudView.swift */; };
 		5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D2225EA54400D6A56B /* AppDelegate.swift */; };
 		5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D4225EA54400D6A56B /* SignupViewController.swift */; };
 		5CBB82D8225EA54400D6A56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB82D6225EA54400D6A56B /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 		2040057BC59B5CC472E81AA8 /* Pods-Eatstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eatstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		4193B2C0B892C53FE861C767 /* Pods-EatstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramTests/Pods-EatstagramTests.release.xcconfig"; sourceTree = "<group>"; };
 		550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eatstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C248BE82267E51E00C660B9 /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
+		5C248BEC2267E70300C660B9 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		5CBB82CF225EA54400D6A56B /* Eatstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBB82D2225EA54400D6A56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBB82D4225EA54400D6A56B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5C248BEA2267E53100C660B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5C248BE82267E51E00C660B9 /* DesignView.swift */,
+				5C248BEC2267E70300C660B9 /* HudView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5C248BEB2267E69100C660B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CBB82D4225EA54400D6A56B /* SignupViewController.swift */,
+				5CBB8304225EBB9100D6A56B /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5CBB82C6225EA54400D6A56B = {
 			isa = PBXGroup;
 			children = (
@@ -128,9 +150,9 @@
 		5CBB82D1225EA54400D6A56B /* Eatstagram */ = {
 			isa = PBXGroup;
 			children = (
+				5C248BEB2267E69100C660B9 /* Controllers */,
+				5C248BEA2267E53100C660B9 /* View */,
 				5CBB82D2225EA54400D6A56B /* AppDelegate.swift */,
-				5CBB82D4225EA54400D6A56B /* SignupViewController.swift */,
-				5CBB8304225EBB9100D6A56B /* LoginViewController.swift */,
 				5CBB82D6225EA54400D6A56B /* Main.storyboard */,
 				5CBB82D9225EA54600D6A56B /* Assets.xcassets */,
 				5CBB82DB225EA54600D6A56B /* LaunchScreen.storyboard */,
@@ -402,8 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C248BE92267E51E00C660B9 /* DesignView.swift in Sources */,
 				5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */,
 				5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */,
+				5C248BED2267E70300C660B9 /* HudView.swift in Sources */,
 				5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
