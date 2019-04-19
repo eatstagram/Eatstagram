@@ -77,8 +77,11 @@ class NewpostViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     
+    
     @IBAction func doneButton(_ sender: Any) {
         saveImageToFirebase()
+        print("Done")
+        
     }
     
 }

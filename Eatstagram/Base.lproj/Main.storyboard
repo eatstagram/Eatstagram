@@ -342,10 +342,10 @@
                                 <rect key="frame" x="276" y="7" width="83" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="doneButton:" destination="1Ae-Ku-SnD" eventType="touchUpInside" id="Lqt-iw-QGg"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <action selector="doneButton:" destination="1Ae-Ku-SnD" id="mbD-bn-Kuw"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="812"/>
