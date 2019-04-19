@@ -110,9 +110,14 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 ### Progress So Far
 * Users are able to create a new account.
 * Users are able to log in based on the account that has been created.
-* Users able to upload photo to firebase database
 
 <img src="/images/eatstagram.gif" height="500">
+
+* Database Design. Designed and tested the database dataflow on Firebase and it worked.
+
+<img src="/images/database_design.jpeg" height="500">
+
+* Users able to upload photo to firebase database
 
 <img src="/images/eastagram_unit11_update.gif" height="500">
 
