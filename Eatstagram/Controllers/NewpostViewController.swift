@@ -13,7 +13,7 @@ class NewpostViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-     
+        print("The date is ", Date())
         
     }
 }
