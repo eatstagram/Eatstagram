@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uto-uc-qPw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pG0-h5-GqB">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -225,7 +225,7 @@
         <!--New Post-->
         <scene sceneID="fIZ-yY-enI">
             <objects>
-                <viewController id="1Ae-Ku-SnD" customClass="NewpostViewController" customModule="Eatstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="uploadViewController" id="1Ae-Ku-SnD" customClass="NewpostViewController" customModule="Eatstagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Px-iC-kVm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,6 +283,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aoa-lI-Lig">
                                                         <rect key="frame" x="0.0" y="0.0" width="331" height="333"/>
                                                         <state key="normal" image="plus"/>
+                                                        <connections>
+                                                            <action selector="uploadImageAction:" destination="1Ae-Ku-SnD" eventType="touchUpInside" id="yPF-OE-UJz"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -333,8 +336,25 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fa8-IW-7dj"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Post" id="aV6-Fe-FCa"/>
+                    <navigationItem key="navigationItem" title="New Post" id="aV6-Fe-FCa">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="sCz-fY-pej">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9jh-cY-NoT">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                            </button>
+                            <connections>
+                                <action selector="doneButton:" destination="1Ae-Ku-SnD" id="mbD-bn-Kuw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="375" height="812"/>
+                    <connections>
+                        <outlet property="detailTextView" destination="FW5-g2-IrC" id="fsX-Bp-1qq"/>
+                        <outlet property="foodImageView" destination="ldG-3n-EJX" id="QU5-Q3-2ch"/>
+                        <outlet property="locationTextField" destination="4T0-IL-tFT" id="MrC-mR-E7L"/>
+                        <outlet property="uploadImageButton" destination="Aoa-lI-Lig" id="q8E-7G-a1D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38P-oB-MlI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

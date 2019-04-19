@@ -49,6 +49,12 @@ class LoginViewController: UIViewController {
             
             self.loginHUD.dismiss()
             print("Successfully log in")
+            
+            // new View Controller
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let uploadViewController = storyBoard.instantiateViewController(withIdentifier: "uploadViewController") as! NewpostViewController
+            self.present(uploadViewController, animated: true, completion: nil)
+            
         }
     }
     
