@@ -11,6 +11,7 @@
 		5BE2AD23193345B94063E6C8 /* Pods_Eatstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */; };
 		5C248BE92267E51E00C660B9 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C248BE82267E51E00C660B9 /* DesignView.swift */; };
 		5C248BED2267E70300C660B9 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C248BEC2267E70300C660B9 /* HudView.swift */; };
+		5C248BEF2267FEE700C660B9 /* NewpostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C248BEE2267FEE700C660B9 /* NewpostViewController.swift */; };
 		5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D2225EA54400D6A56B /* AppDelegate.swift */; };
 		5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D4225EA54400D6A56B /* SignupViewController.swift */; };
 		5CBB82D8225EA54400D6A56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB82D6225EA54400D6A56B /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eatstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C248BE82267E51E00C660B9 /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
 		5C248BEC2267E70300C660B9 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		5C248BEE2267FEE700C660B9 /* NewpostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewpostViewController.swift; sourceTree = "<group>"; };
 		5CBB82CF225EA54400D6A56B /* Eatstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBB82D2225EA54400D6A56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBB82D4225EA54400D6A56B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 			children = (
 				5CBB82D4225EA54400D6A56B /* SignupViewController.swift */,
 				5CBB8304225EBB9100D6A56B /* LoginViewController.swift */,
+				5C248BEE2267FEE700C660B9 /* NewpostViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C248BE92267E51E00C660B9 /* DesignView.swift in Sources */,
+				5C248BEF2267FEE700C660B9 /* NewpostViewController.swift in Sources */,
 				5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */,
 				5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */,
 				5C248BED2267E70300C660B9 /* HudView.swift in Sources */,
@@ -614,7 +618,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kimleng.Eatstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -633,7 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kimleng.Eatstagram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

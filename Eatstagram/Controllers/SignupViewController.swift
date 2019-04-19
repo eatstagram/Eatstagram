@@ -52,7 +52,25 @@ class SignupViewController: UIViewController {
             }
             
             self.signupHUD.dismiss()
+            self.saveInfoToFirestore()
             //print("Successfully create user ", result?.user.uid)
+        }
+    }
+    
+    //after create a new user, users document will add a new document
+    fileprivate func saveInfoToFirestore() {
+        let uid = Auth.auth().currentUser?.uid ?? ""
+        let docData: [String: Any] = [
+            "username": usernameTextField.text ?? "",
+            "image": ""
+        ]
+        Firestore.firestore().collection("users").document(uid).setData(docData) { (error) in
+            if let error = error {
+                print("Fail to add to the database ", error)
+                return
+            }
+            
+            print("Successfully added to the database")
         }
     }
     
