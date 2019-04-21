@@ -28,7 +28,7 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 
 * [x]User can create a new account
 * [x]User can login
-* [ ]User can post a new photo of food
+* [x]User can post a new photo of food
 * [ ]User can add details and location about the food
 * [ ]User can view a feed of food photos
 * [ ]User can like a food photo
@@ -120,7 +120,6 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 * Users able to upload photo to firebase database
 
 <img src="/images/eastagram_unit11_update.gif" height="500">
-
 
 ## Schema 
 
