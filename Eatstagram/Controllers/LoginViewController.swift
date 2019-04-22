@@ -52,8 +52,9 @@ class LoginViewController: UIViewController {
             
             // new View Controller
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let uploadViewController = storyBoard.instantiateViewController(withIdentifier: "uploadViewController") as! NewpostViewController
+            //let uploadViewController = storyBoard.instantiateViewController(withIdentifier: "uploadViewController") as! NewpostViewController
             //self.present(uploadViewController, animated: true, completion: nil)
+            let uploadViewController = storyBoard.instantiateViewController(withIdentifier: "userViewController") as! UserViewController
             let navController = UINavigationController(rootViewController: uploadViewController)
             self.present(navController, animated:true, completion:nil)
             

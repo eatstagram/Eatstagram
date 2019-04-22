@@ -22,6 +22,8 @@
 		5CBB8303225EA68700D6A56B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB8302225EA68700D6A56B /* GoogleService-Info.plist */; };
 		5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB8304225EBB9100D6A56B /* LoginViewController.swift */; };
 		9A86383ED432DA67BB6AA0F4 /* Pods_EatstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633E40346B0BC9A9E4BA230E /* Pods_EatstagramTests.framework */; };
+		A818A384226D3A9C0020A487 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818A383226D3A9C0020A487 /* UserViewController.swift */; };
+		A818A388226D41410020A487 /* UserImagePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818A387226D41410020A487 /* UserImagePostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		5CBB8304225EBB9100D6A56B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		633E40346B0BC9A9E4BA230E /* Pods_EatstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8A4114FE1D9B6F5E475A5C /* Pods-EatstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramUITests/Pods-EatstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A818A383226D3A9C0020A487 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		A818A387226D41410020A487 /* UserImagePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagePostCell.swift; sourceTree = "<group>"; };
 		AC60270473746488988A30C4 /* Pods-EatstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramTests/Pods-EatstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B867723D2FB6F7D2C07DC8DA /* Pods-Eatstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eatstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram.release.xcconfig"; sourceTree = "<group>"; };
 		CD48B8F0EA46A3DF4BA2EEF8 /* Pods-EatstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramUITests/Pods-EatstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 			children = (
 				5C248BE82267E51E00C660B9 /* DesignView.swift */,
 				5C248BEC2267E70300C660B9 /* HudView.swift */,
+				A818A387226D41410020A487 /* UserImagePostCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 				5CBB82D4225EA54400D6A56B /* SignupViewController.swift */,
 				5CBB8304225EBB9100D6A56B /* LoginViewController.swift */,
 				5C248BEE2267FEE700C660B9 /* NewpostViewController.swift */,
+				A818A383226D3A9C0020A487 /* UserViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -410,6 +417,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -427,7 +435,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A818A384226D3A9C0020A487 /* UserViewController.swift in Sources */,
 				5C248BE92267E51E00C660B9 /* DesignView.swift in Sources */,
+				A818A388226D41410020A487 /* UserImagePostCell.swift in Sources */,
 				5C248BEF2267FEE700C660B9 /* NewpostViewController.swift in Sources */,
 				5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */,
 				5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */,
