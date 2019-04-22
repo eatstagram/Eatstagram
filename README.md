@@ -29,12 +29,12 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 * [x]User can create a new account
 * [x]User can login
 * [x]User can post a new photo of food
-* [ ]User can add details and location about the food
+* [x]User can add details and location about the food
 * [ ]User can view a feed of food photos
 * [ ]User can like a food photo
 * [ ]User can add a comment to a photo
 * [ ]User can view details of a food photo they select
-* [ ]User can view all the pictures they uploaded on their profile
+* [x]User can view all the pictures they uploaded on their profile
 
 **Optional Nice-to-have Stories**
 
