@@ -30,10 +30,10 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 * [x]User can login
 * [x]User can post a new photo of food
 * [x]User can add details and location about the food
-* [ ]User can view a feed of food photos
-* [ ]User can like a food photo
-* [ ]User can add a comment to a photo
-* [ ]User can view details of a food photo they select
+* [x]User can view a feed of food photos
+* [x]User can like a food photo
+* [x]User can add a comment to a photo
+* [x]User can view details of a food photo they select
 * [x]User can view all the pictures they uploaded on their profile
 
 **Optional Nice-to-have Stories**
@@ -117,9 +117,18 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 
 <img src="/images/database_design.jpeg" height="500">
 
-* Users able to upload photo to firebase database
+* User is able to post a new photo and is able to upload photo to firebase database backend
 
 <img src="/images/eastagram_unit11_update.gif" height="500">
+
+* User can add details and location about the food
+* User can view a feed of food photos
+* User can like a food photo
+* User can add a comment to a photo
+* User can view details of a food photo they select
+* User can view all the pictures they uploaded on their profile
+
+<img src="/images/eastagram_unit11_update.gif" height="500">  CHANGE THIS!
 
 ## Schema 
 
