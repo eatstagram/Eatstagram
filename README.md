@@ -128,7 +128,7 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 * User can view details of a food photo they select
 * User can view all the pictures they uploaded on their profile
 
-<img src="/images/eastagram_unit11_update.gif" height="500">  CHANGE THIS!
+<img src="/images/sprint3.gif" height="500">
 
 ## Schema 
 
