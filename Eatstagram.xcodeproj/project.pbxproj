@@ -9,9 +9,14 @@
 /* Begin PBXBuildFile section */
 		573883BD2B98C1D954B0EB56 /* Pods_EatstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE2DBF347D57C11D4AFA370 /* Pods_EatstagramUITests.framework */; };
 		5BE2AD23193345B94063E6C8 /* Pods_Eatstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */; };
+		5C0829E1226B88DE006256E5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0829E0226B88DE006256E5 /* FeedViewController.swift */; };
 		5C248BE92267E51E00C660B9 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C248BE82267E51E00C660B9 /* DesignView.swift */; };
 		5C248BED2267E70300C660B9 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C248BEC2267E70300C660B9 /* HudView.swift */; };
 		5C248BEF2267FEE700C660B9 /* NewpostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C248BEE2267FEE700C660B9 /* NewpostViewController.swift */; };
+		5C33E6FF22710874008CD338 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33E6FE22710874008CD338 /* CommentViewController.swift */; };
+		5C33E70122710899008CD338 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33E70022710899008CD338 /* CommentCell.swift */; };
+		5C33E703227190F7008CD338 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33E702227190F7008CD338 /* Comment.swift */; };
+		5C8DC9E9226FD76C00F5601B /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC9E8226FD76C00F5601B /* ImagePost.swift */; };
 		5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D2225EA54400D6A56B /* AppDelegate.swift */; };
 		5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D4225EA54400D6A56B /* SignupViewController.swift */; };
 		5CBB82D8225EA54400D6A56B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB82D6225EA54400D6A56B /* Main.storyboard */; };
@@ -21,9 +26,13 @@
 		5CBB82F3225EA54600D6A56B /* EatstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82F2225EA54600D6A56B /* EatstagramUITests.swift */; };
 		5CBB8303225EA68700D6A56B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CBB8302225EA68700D6A56B /* GoogleService-Info.plist */; };
 		5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB8304225EBB9100D6A56B /* LoginViewController.swift */; };
+		5CC23841226C57D70009B706 /* UserImagePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC23840226C57D70009B706 /* UserImagePostCell.swift */; };
+		5CC23843226C58250009B706 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC23842226C58250009B706 /* UserViewController.swift */; };
+		5CE7E34F226BCB9600305275 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7E34E226BCB9600305275 /* FeedViewCell.swift */; };
+		5CE7E352226BCCC600305275 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7E351226BCCC600305275 /* Post.swift */; };
+		5CE7E354226BDCD900305275 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7E353226BDCD900305275 /* User.swift */; };
+		5CE7E356226BE95800305275 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7E355226BE95800305275 /* DetailViewController.swift */; };
 		9A86383ED432DA67BB6AA0F4 /* Pods_EatstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633E40346B0BC9A9E4BA230E /* Pods_EatstagramTests.framework */; };
-		A818A384226D3A9C0020A487 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818A383226D3A9C0020A487 /* UserViewController.swift */; };
-		A818A388226D41410020A487 /* UserImagePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A818A387226D41410020A487 /* UserImagePostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +57,14 @@
 		2040057BC59B5CC472E81AA8 /* Pods-Eatstagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eatstagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram.debug.xcconfig"; sourceTree = "<group>"; };
 		4193B2C0B892C53FE861C767 /* Pods-EatstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramTests/Pods-EatstagramTests.release.xcconfig"; sourceTree = "<group>"; };
 		550D4CF56BFA1742E7D6B582 /* Pods_Eatstagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eatstagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C0829E0226B88DE006256E5 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		5C248BE82267E51E00C660B9 /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
 		5C248BEC2267E70300C660B9 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		5C248BEE2267FEE700C660B9 /* NewpostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewpostViewController.swift; sourceTree = "<group>"; };
+		5C33E6FE22710874008CD338 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		5C33E70022710899008CD338 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		5C33E702227190F7008CD338 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		5C8DC9E8226FD76C00F5601B /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 		5CBB82CF225EA54400D6A56B /* Eatstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBB82D2225EA54400D6A56B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CBB82D4225EA54400D6A56B /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -66,10 +80,14 @@
 		5CBB82F4225EA54600D6A56B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CBB8302225EA68700D6A56B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5CBB8304225EBB9100D6A56B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5CC23840226C57D70009B706 /* UserImagePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagePostCell.swift; sourceTree = "<group>"; };
+		5CC23842226C58250009B706 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		5CE7E34E226BCB9600305275 /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
+		5CE7E351226BCCC600305275 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5CE7E353226BDCD900305275 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5CE7E355226BE95800305275 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		633E40346B0BC9A9E4BA230E /* Pods_EatstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EatstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8A4114FE1D9B6F5E475A5C /* Pods-EatstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramUITests/Pods-EatstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		A818A383226D3A9C0020A487 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		A818A387226D41410020A487 /* UserImagePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagePostCell.swift; sourceTree = "<group>"; };
 		AC60270473746488988A30C4 /* Pods-EatstagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramTests/Pods-EatstagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B867723D2FB6F7D2C07DC8DA /* Pods-Eatstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eatstagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram.release.xcconfig"; sourceTree = "<group>"; };
 		CD48B8F0EA46A3DF4BA2EEF8 /* Pods-EatstagramUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EatstagramUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EatstagramUITests/Pods-EatstagramUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,20 +136,25 @@
 			children = (
 				5C248BE82267E51E00C660B9 /* DesignView.swift */,
 				5C248BEC2267E70300C660B9 /* HudView.swift */,
-				A818A387226D41410020A487 /* UserImagePostCell.swift */,
+				5CE7E34E226BCB9600305275 /* FeedViewCell.swift */,
+				5CC23840226C57D70009B706 /* UserImagePostCell.swift */,
+				5C33E70022710899008CD338 /* CommentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		5C248BEB2267E69100C660B9 /* Controllers */ = {
+		5C248BEB2267E69100C660B9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				5CBB82D4225EA54400D6A56B /* SignupViewController.swift */,
 				5CBB8304225EBB9100D6A56B /* LoginViewController.swift */,
 				5C248BEE2267FEE700C660B9 /* NewpostViewController.swift */,
-				A818A383226D3A9C0020A487 /* UserViewController.swift */,
+				5C0829E0226B88DE006256E5 /* FeedViewController.swift */,
+				5CE7E355226BE95800305275 /* DetailViewController.swift */,
+				5CC23842226C58250009B706 /* UserViewController.swift */,
+				5C33E6FE22710874008CD338 /* CommentViewController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		5CBB82C6225EA54400D6A56B = {
@@ -159,7 +182,8 @@
 		5CBB82D1225EA54400D6A56B /* Eatstagram */ = {
 			isa = PBXGroup;
 			children = (
-				5C248BEB2267E69100C660B9 /* Controllers */,
+				5CE7E350226BCCAC00305275 /* Model */,
+				5C248BEB2267E69100C660B9 /* Controller */,
 				5C248BEA2267E53100C660B9 /* View */,
 				5CBB82D2225EA54400D6A56B /* AppDelegate.swift */,
 				5CBB82D6225EA54400D6A56B /* Main.storyboard */,
@@ -189,6 +213,17 @@
 			path = EatstagramUITests;
 			sourceTree = "<group>";
 		};
+		5CE7E350226BCCAC00305275 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CE7E351226BCCC600305275 /* Post.swift */,
+				5CE7E353226BDCD900305275 /* User.swift */,
+				5C8DC9E8226FD76C00F5601B /* ImagePost.swift */,
+				5C33E702227190F7008CD338 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		64636FA0D58C5EECB83563C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +248,7 @@
 				5CBB82CB225EA54400D6A56B /* Sources */,
 				5CBB82CC225EA54400D6A56B /* Frameworks */,
 				5CBB82CD225EA54400D6A56B /* Resources */,
-				E24B7972D27BC91EC7DA3437 /* [CP] Embed Pods Frameworks */,
+				12FAFAF00806C4FE5154DD89 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,6 +369,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		12FAFAF00806C4FE5154DD89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4A2993CFDB046D0657D104B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,46 +463,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E24B7972D27BC91EC7DA3437 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eatstagram/Pods-Eatstagram-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -435,14 +470,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A818A384226D3A9C0020A487 /* UserViewController.swift in Sources */,
+				5CE7E356226BE95800305275 /* DetailViewController.swift in Sources */,
 				5C248BE92267E51E00C660B9 /* DesignView.swift in Sources */,
-				A818A388226D41410020A487 /* UserImagePostCell.swift in Sources */,
+				5CC23843226C58250009B706 /* UserViewController.swift in Sources */,
 				5C248BEF2267FEE700C660B9 /* NewpostViewController.swift in Sources */,
 				5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */,
+				5C33E703227190F7008CD338 /* Comment.swift in Sources */,
+				5C33E6FF22710874008CD338 /* CommentViewController.swift in Sources */,
 				5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */,
+				5CE7E34F226BCB9600305275 /* FeedViewCell.swift in Sources */,
 				5C248BED2267E70300C660B9 /* HudView.swift in Sources */,
+				5CE7E352226BCCC600305275 /* Post.swift in Sources */,
 				5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */,
+				5CE7E354226BDCD900305275 /* User.swift in Sources */,
+				5CC23841226C57D70009B706 /* UserImagePostCell.swift in Sources */,
+				5C0829E1226B88DE006256E5 /* FeedViewController.swift in Sources */,
+				5C8DC9E9226FD76C00F5601B /* ImagePost.swift in Sources */,
+				5C33E70122710899008CD338 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +665,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Eatstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,6 +685,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Eatstagram/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

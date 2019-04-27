@@ -11,11 +11,11 @@ target 'Eatstagram' do
   pod 'AlamofireImage'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
   pod 'Firebase/Auth'
   pod 'JGProgressHUD'
-  pod 'Firebase/Storage'
   pod 'SDWebImage'
-  
+
   target 'EatstagramTests' do
     inherit! :search_paths
     # Pods for testing
