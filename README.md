@@ -28,10 +28,10 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 
 * [x]User can create a new account
 * [x]User can login
-* [ ]User can post a new photo of food
-* [ ]User can add details and location about the food
-* [ ]User can view a feed of food photos
-* [ ]User can like a food photo
+* [x]User can post a new photo of food
+* [x]User can add details and location about the food
+* [x]User can view a feed of food photos
+* [x]User can like a food photo
 * [ ]User can add a comment to a photo
 * [ ]User can view details of a food photo they select
 * [ ]User can view all the pictures they uploaded on their profile
@@ -112,6 +112,14 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 * Users are able to log in based on the account that has been created.
 
 <img src="/images/eatstagram.gif" height="500">
+
+* Database Design. Designed and tested the database dataflow on Firebase and it worked.
+
+<img src="/images/database_design.jpeg" height="500">
+
+* Users able to upload photo to firebase database
+
+<img src="/images/eastagram_unit11_update.gif" height="500">
 
 ## Schema 
 
