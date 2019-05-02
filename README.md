@@ -139,11 +139,11 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 <img src="/images/sprint3.gif" height="500">
 
 ### Progress So Far - Sprint 4
-* Tweek previous features to add:  sort post, sort comments, display time of post, display time of comment
+* Tweeked previous features to add:  sort post, sort comments, display time of post, display time of comment
 * Discussed plan for presentation
 * Discussed plan for video
-* Fix performance issues such as displaying messages such as loading, etc. while the app is fulfilling user request
-* Discuss what optional features can be completed in time left
+* Fixed performance issues such as displaying messages such as loading, etc. while the app is fulfilling user request
+* Discussed what optional features can be completed in time left
 
 <img src="/images/sprint4.gif" height="500">
 
