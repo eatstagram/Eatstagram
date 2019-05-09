@@ -16,6 +16,7 @@ import MaterialComponents.MaterialActivityIndicator
 protocol FeedDelegate {
     func didPressComment(postID: String)
     func didPressLike(isLiked: Bool, index: Int, numLikes: Int)
+    func didPressProfileImageView(index: Int)
 }
 
 class FeedViewCell: UITableViewCell {
@@ -40,6 +41,9 @@ class FeedViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        addActionToImageView()
+        
         photoImageView.layer.cornerRadius = 15
         profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
         profileImageView.contentMode = .scaleAspectFill
@@ -51,6 +55,17 @@ class FeedViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    //add action to image view
+    fileprivate func addActionToImageView() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        profileImageView.isUserInteractionEnabled = true
+        profileImageView.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    @objc fileprivate func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+        self.delegate.didPressProfileImageView(index: self.likeButton.tag)
     }
     
     fileprivate func setupIndicator() {
@@ -81,22 +96,26 @@ class FeedViewCell: UITableViewCell {
         }
         
         if let url = URL(string: feedArray[index].imageUrl) {
-            SDWebImageManager.shared.loadImage(with: url, options: .continueInBackground, progress: { (_, _, _) in
-                DispatchQueue.main.async {
-                    self.photoImageView.image = #imageLiteral(resourceName: "white")
-                    self.activityIndicator.startAnimating()
-                }
-            }) { (image, _, _, _, _, _) in
-                self.photoImageView.image = image
+//            SDWebImageManager.shared.loadImage(with: url, options: .progressiveLoad, progress: { (_, _, _) in
+//                DispatchQueue.main.async {
+//                    self.activityIndicator.startAnimating()
+//                }
+//            }) { (image, _, _, _, _, _) in
+//                //self.photoImageView.image = image
+//                self.photoImageView.sd_setImage(with: url, placeholderImage: nil, options: .progressiveLoad)
+//                self.activityIndicator.stopAnimating()
+//            }
+            self.activityIndicator.startAnimating()
+            self.photoImageView.sd_setImage(with: url, placeholderImage: nil, options: .continueInBackground, completed: { (_, _, _, _) in
                 self.activityIndicator.stopAnimating()
-            }
+            })
         }
         
         usernameLabel.text = feedArray[index].username
         if let profileUrl = URL(string: feedArray[index].userImageUrl ?? "") {
-            SDWebImageManager.shared.loadImage(with: profileUrl, options: .continueInBackground, progress: nil) { (image, _, _, _, _, _) in
-                self.profileImageView.image = image
-            }
+//            SDWebImageManager.shared.loadImage(with: profileUrl, options: .progressiveLoad, progress: nil) { (image, _, _, _, _, _) in
+                self.profileImageView.sd_setImage(with: profileUrl, placeholderImage: nil, options: .continueInBackground)
+            //}
         }
     }
     
@@ -105,16 +124,16 @@ class FeedViewCell: UITableViewCell {
         getPostIDFromFirestore { (postID, snapshot) in
             var numLikes = snapshot.documents[0].data()["numLikes"] as? Int
             numLikes = isLiked ? (numLikes ?? 0) - 1 : (numLikes ?? 0) + 1
+            if (numLikes ?? 0) < 2 {
+                self.numLikesLabel.text = "\(numLikes ?? 0) like"
+            } else {
+                self.numLikesLabel.text = "\(numLikes ?? 0) likes"
+            }
             queryDoc.document(self.postID).updateData(([
                 "numLikes": numLikes ?? 0
                 ]), completion: { (error) in
                     if let error = error {
                         print("Cannot update likes ", error)
-                    }
-                    if (numLikes ?? 0) < 2 {
-                        self.numLikesLabel.text = "\(numLikes ?? 0) like"
-                    } else {
-                        self.numLikesLabel.text = "\(numLikes ?? 0) likes"
                     }
                     print("Done")
                     completion(isLiked, numLikes ?? 0)

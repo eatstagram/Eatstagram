@@ -10,17 +10,23 @@ import UIKit
 import Firebase
 import JGProgressHUD
 
-class UserViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+let addNewImageNotificationKey = "com.kimleng.Eatstagram.newImage"
+
+class UserViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     //IBOulets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
+    @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
     
     //Variables
     fileprivate let loadingHUD = JGProgressHUD(style: .dark)
     var imagePosts = [ImagePost]()
     let newPostNotificationName = Notification.Name(rawValue: addNewPostNotificationKey)
+    var uid = Auth.auth().currentUser?.uid
+    var isCurrentUser = true
     
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -28,6 +34,11 @@ class UserViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if !isCurrentUser {
+            editButton.isHidden = true
+            navigationItem.rightBarButtonItem = nil
+        }
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -72,7 +83,7 @@ class UserViewController: UIViewController, UICollectionViewDelegate, UICollecti
     fileprivate func fetchUserImagePost() {
         loadingHUD.textLabel.text = "Loading"
         loadingHUD.show(in: self.view, animated: true)
-        guard let uid = Auth.auth().currentUser?.uid else { return }
+        guard let uid = self.uid else { return }
         fetchUserFromFirestore(completion: { (user) in
             self.usernameLabel.text = user.username
             self.profileImageView.sd_setImage(with: URL(string: user.imageUrl ?? ""))
@@ -86,6 +97,29 @@ class UserViewController: UIViewController, UICollectionViewDelegate, UICollecti
             }
             self.loadingHUD.dismiss()
         }, uid: uid)
+    }
+    
+    
+    
+    fileprivate func changeImageInFirebase(imageURL: String) {
+        guard let userUid = uid else {return}
+        Firestore.firestore().collection("users").document(userUid).updateData(["image": imageURL]) { (error) in
+            if let error = error {
+                print("Cannot update profile image ", error)
+            }
+            //Post the notification
+            let name = Notification.Name(rawValue: addNewImageNotificationKey)
+            NotificationCenter.default.post(name: name, object: nil)
+        }
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[.editedImage] as! UIImage
+        profileImageView.image = image
+        saveImageToFirebase(imageView: profileImageView) { (imageURL) in
+            self.changeImageInFirebase(imageURL: imageURL)
+        }
+        dismiss(animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -121,4 +155,11 @@ class UserViewController: UIViewController, UICollectionViewDelegate, UICollecti
         createAlertController()
     }
     
+    @IBAction func editButtonPressed(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        self.present(imagePicker, animated: true, completion: nil)
+    }    
 }
