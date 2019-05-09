@@ -16,6 +16,7 @@ target 'Eatstagram' do
   pod 'JGProgressHUD'
   pod 'SDWebImage'
   pod 'MaterialComponents/ActivityIndicator'
+  pod 'SwiftLocation', '~> 4.0'
 
   target 'EatstagramTests' do
     inherit! :search_paths

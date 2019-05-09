@@ -23,6 +23,8 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //print("The location is ",post.location)
+        
         if post != nil {
             if let url = URL(string: post.imageUrl) {
                 photoImageView.sd_setImage(with: url)
@@ -37,6 +39,21 @@ class DetailViewController: UIViewController {
             locationLabel.text = imagePost.location
             detailLabel.text = imagePost.detail
             usernameLabel.text = "\(imagePost.username ?? ""):"
+        }
+    }
+    
+    @IBAction func goButtonPressed(_ sender: Any) {
+        var locationQuery = ""
+        if post != nil {
+            locationQuery = post.location?.replacingOccurrences(of: " ", with: "+") ?? ""
+        } else {
+            locationQuery = imagePost.location?.replacingOccurrences(of: " ", with: "+") ?? ""
+        }
+        
+        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
+            UIApplication.shared.open(URL(string:"comgooglemaps://?q=\(locationQuery)")!, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.open(URL(string:"https://www.google.com/maps/search/?api=1&query=\(locationQuery)")!, options: [:], completionHandler: nil)
         }
     }
 }

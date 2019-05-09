@@ -16,7 +16,9 @@
 		5C33E6FF22710874008CD338 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33E6FE22710874008CD338 /* CommentViewController.swift */; };
 		5C33E70122710899008CD338 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33E70022710899008CD338 /* CommentCell.swift */; };
 		5C33E703227190F7008CD338 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C33E702227190F7008CD338 /* Comment.swift */; };
-		5C3D1D562273CADF00D78210 /* FetchUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D1D552273CADF00D78210 /* FetchUser.swift */; };
+		5C3D1D562273CADF00D78210 /* FirebaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D1D552273CADF00D78210 /* FirebaseExtension.swift */; };
+		5C7086CA22808A8800D732EB /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7086C922808A8800D732EB /* MarketViewController.swift */; };
+		5C7086CC22808AB000D732EB /* MarketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7086CB22808AB000D732EB /* MarketCell.swift */; };
 		5C8799F62277FC0A003A7E7E /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8799F52277FC0A003A7E7E /* DateExtension.swift */; };
 		5C8DC9E9226FD76C00F5601B /* ImagePost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC9E8226FD76C00F5601B /* ImagePost.swift */; };
 		5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB82D2225EA54400D6A56B /* AppDelegate.swift */; };
@@ -30,6 +32,7 @@
 		5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CBB8304225EBB9100D6A56B /* LoginViewController.swift */; };
 		5CC23841226C57D70009B706 /* UserImagePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC23840226C57D70009B706 /* UserImagePostCell.swift */; };
 		5CC23843226C58250009B706 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC23842226C58250009B706 /* UserViewController.swift */; };
+		5CDF4FDA227E5260007E4F2C /* LocationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF4FD9227E5260007E4F2C /* LocationViewCell.swift */; };
 		5CE7E34F226BCB9600305275 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7E34E226BCB9600305275 /* FeedViewCell.swift */; };
 		5CE7E352226BCCC600305275 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7E351226BCCC600305275 /* Post.swift */; };
 		5CE7E354226BDCD900305275 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE7E353226BDCD900305275 /* User.swift */; };
@@ -66,7 +69,9 @@
 		5C33E6FE22710874008CD338 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		5C33E70022710899008CD338 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		5C33E702227190F7008CD338 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
-		5C3D1D552273CADF00D78210 /* FetchUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUser.swift; sourceTree = "<group>"; };
+		5C3D1D552273CADF00D78210 /* FirebaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseExtension.swift; sourceTree = "<group>"; };
+		5C7086C922808A8800D732EB /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		5C7086CB22808AB000D732EB /* MarketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketCell.swift; sourceTree = "<group>"; };
 		5C8799F52277FC0A003A7E7E /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		5C8DC9E8226FD76C00F5601B /* ImagePost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePost.swift; sourceTree = "<group>"; };
 		5CBB82CF225EA54400D6A56B /* Eatstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eatstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +91,7 @@
 		5CBB8304225EBB9100D6A56B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5CC23840226C57D70009B706 /* UserImagePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImagePostCell.swift; sourceTree = "<group>"; };
 		5CC23842226C58250009B706 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		5CDF4FD9227E5260007E4F2C /* LocationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewCell.swift; sourceTree = "<group>"; };
 		5CE7E34E226BCB9600305275 /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
 		5CE7E351226BCCC600305275 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		5CE7E353226BDCD900305275 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -143,6 +149,8 @@
 				5CE7E34E226BCB9600305275 /* FeedViewCell.swift */,
 				5CC23840226C57D70009B706 /* UserImagePostCell.swift */,
 				5C33E70022710899008CD338 /* CommentCell.swift */,
+				5CDF4FD9227E5260007E4F2C /* LocationViewCell.swift */,
+				5C7086CB22808AB000D732EB /* MarketCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 				5CE7E355226BE95800305275 /* DetailViewController.swift */,
 				5CC23842226C58250009B706 /* UserViewController.swift */,
 				5C33E6FE22710874008CD338 /* CommentViewController.swift */,
+				5C7086C922808A8800D732EB /* MarketViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,7 +173,7 @@
 		5C3D1D542273CABE00D78210 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				5C3D1D552273CADF00D78210 /* FetchUser.swift */,
+				5C3D1D552273CADF00D78210 /* FirebaseExtension.swift */,
 				5C8799F52277FC0A003A7E7E /* DateExtension.swift */,
 			);
 			path = Helpers;
@@ -402,6 +411,7 @@
 				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftLocation/SwiftLocation.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -421,6 +431,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftLocation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -493,24 +504,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CE7E356226BE95800305275 /* DetailViewController.swift in Sources */,
+				5CDF4FDA227E5260007E4F2C /* LocationViewCell.swift in Sources */,
 				5C248BE92267E51E00C660B9 /* DesignView.swift in Sources */,
 				5CC23843226C58250009B706 /* UserViewController.swift in Sources */,
 				5C248BEF2267FEE700C660B9 /* NewpostViewController.swift in Sources */,
 				5CBB8305225EBB9100D6A56B /* LoginViewController.swift in Sources */,
 				5C8799F62277FC0A003A7E7E /* DateExtension.swift in Sources */,
+				5C7086CC22808AB000D732EB /* MarketCell.swift in Sources */,
 				5C33E703227190F7008CD338 /* Comment.swift in Sources */,
 				5C33E6FF22710874008CD338 /* CommentViewController.swift in Sources */,
 				5CBB82D5225EA54400D6A56B /* SignupViewController.swift in Sources */,
 				5CE7E34F226BCB9600305275 /* FeedViewCell.swift in Sources */,
 				5C248BED2267E70300C660B9 /* HudView.swift in Sources */,
 				5CE7E352226BCCC600305275 /* Post.swift in Sources */,
+				5C7086CA22808A8800D732EB /* MarketViewController.swift in Sources */,
 				5CBB82D3225EA54400D6A56B /* AppDelegate.swift in Sources */,
 				5CE7E354226BDCD900305275 /* User.swift in Sources */,
 				5CC23841226C57D70009B706 /* UserImagePostCell.swift in Sources */,
 				5C0829E1226B88DE006256E5 /* FeedViewController.swift in Sources */,
 				5C8DC9E9226FD76C00F5601B /* ImagePost.swift in Sources */,
 				5C33E70122710899008CD338 /* CommentCell.swift in Sources */,
-				5C3D1D562273CADF00D78210 /* FetchUser.swift in Sources */,
+				5C3D1D562273CADF00D78210 /* FirebaseExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -687,7 +701,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RMYW8C3V4Y;
 				INFOPLIST_FILE = Eatstagram/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -707,7 +721,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RMYW8C3V4Y;
 				INFOPLIST_FILE = Eatstagram/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (

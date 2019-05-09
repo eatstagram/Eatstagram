@@ -71,14 +71,17 @@ class CommentViewController: UIViewController, UITableViewDelegate, UITableViewD
             let commentData: [String: Any] = [
                 "comment": self.commentTextField.text ?? "",
                 "createdAt": FieldValue.serverTimestamp(),
-                "imageUrl": user.imageUrl ?? "",
-                "username": user.username ?? ""
+                "uid": uid
+//                "imageUrl": user.imageUrl ?? "",
+//                "username": user.username ?? ""
             ]
             Firestore.firestore().collection("posts").document(self.postID).collection("comments").document().setData(commentData, completion: { (error) in
                     if let error = error {
                         print("Cannot add comment into firestore ", error)
                     }
-                let comment = Comment(dictionary: commentData)
+                var comment = Comment(dictionary: commentData)
+                comment.username = user.username
+                comment.imageUrl = user.imageUrl
                 self.comments.append(comment)
                 self.commentTextField.text = ""
                 self.tableView.reloadData()
@@ -89,16 +92,31 @@ class CommentViewController: UIViewController, UITableViewDelegate, UITableViewD
     fileprivate func fetchCommentsFromFirestore() {
         loadingHUD.textLabel.text = "Loading"
         loadingHUD.show(in: self.view, animated: true)
+        guard let uid = Auth.auth().currentUser?.uid else { return }
         Firestore.firestore().collection("posts").document(postID).collection("comments").order(by: "createdAt").getDocuments { (snapshots, error) in
-            for document in snapshots!.documents {
-                //print(document.documentID)
-                let comment = Comment(dictionary: document.data())
-                self.comments.append(comment)
-                self.tableView.reloadData()
+            
+            if let error = error {
+                print("Cannot add comments ", error)
+                self.loadingHUD.dismiss()
+                return
+            }
+            
+            if (snapshots?.documents.isEmpty)! {
                 self.loadingHUD.dismiss()
             }
+            
+            for document in snapshots!.documents {
+                //print(document.documentID)
+                var comment = Comment(dictionary: document.data())
+                fetchUserFromFirestore(completion: { (user) in
+                    comment.username = user.username
+                    comment.imageUrl = user.imageUrl
+                    self.comments.append(comment)
+                    self.tableView.reloadData()
+                    self.loadingHUD.dismiss()
+                }, uid: uid)
+            }
         }
-        self.loadingHUD.dismiss()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -36,6 +36,13 @@ class SignupViewController: UIViewController {
         setupTapGesture()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        createGradientLayer(gradientView: gradientView)
+        gradientView.bringSubviewToFront(logoImageView)
+        gradientView.bringSubviewToFront(closeButton)
+    }
+    
     deinit {
         NotificationCenter.default.removeObserver(self)
     }
@@ -78,9 +85,9 @@ class SignupViewController: UIViewController {
         signupButton.layer.cornerRadius = 5
         signupButton.layer.borderWidth = 1
         signupButton.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        createGradientLayer(gradientView: gradientView)
-        gradientView.bringSubviewToFront(logoImageView)
-        gradientView.bringSubviewToFront(closeButton)
+//        createGradientLayer(gradientView: gradientView)
+//        gradientView.bringSubviewToFront(logoImageView)
+//        gradientView.bringSubviewToFront(closeButton)
     }
     
     //register user with email and password

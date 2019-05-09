@@ -40,6 +40,12 @@ class LoginViewController: UIViewController {
         setupTapGesture()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        createGradientLayer(gradientView: gradientView)
+        gradientView.bringSubviewToFront(logoImageView)
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if defaults.string(forKey: emailKey) != nil {
@@ -91,8 +97,7 @@ class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = 5
         loginButton.layer.borderWidth = 1
         loginButton.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-        createGradientLayer(gradientView: gradientView)
-        gradientView.bringSubviewToFront(logoImageView)
+        //createGradientLayer(gradientView: gradientView)
     }
     
     //login user with email and password
