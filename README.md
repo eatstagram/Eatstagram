@@ -163,7 +163,7 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 * Presentation Slides
 * Team Dinner
 
-<img src="/images/final_sprint.gif" height="500">
+<img src="/images/sprint_final.gif" height="500">
 
 
 ## Schema 
