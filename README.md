@@ -38,19 +38,23 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 
 **Optional Nice-to-have Stories**
 
-* [ ]User can search for food based on information in Details field
+* [X]User can search for food based on information in Details field
 * [ ]User can search based on location of the post
 * [ ]User can see which food is available for purchase by the $ sign next to it
 * [ ]User's location is auto populated as default but can be edited by the user
-* [ ]User can upload their own profile picture
-* [ ]User can edit food details of food they had posted
+* [X]User can search for directions based on location (Maps API integration)
+* [X]User can upload their own profile picture
+* [X]User can edit food details of food they had posted
 * [ ]User can delete food picture and details posted by the user
 * [ ]User can subscribe to food subscription monthly service
 * [ ]User can see notifications when their photo is liked
 * [ ]User can see a list of those who liked their photos
-* [ ]User can view other user’s profiles and see their photo feed
+* [X]User can view other user’s profiles and see their photo feed
 * [ ]User can change Settings of the app
 * [ ]User can only post food pictures and their profile picture. Non-food pictures are not allowed when uploading new post. (Use machine learning for this feature)
+* [X]User can collect and use Eatstagram coins
+* [ ]User can purchase food subscription based on Eatstagram coins
+
 
 ### 2. Screen Archetypes
 
@@ -147,6 +151,19 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 
 <img src="/images/sprint4.gif" height="500">
 
+### Final Sprint 
+* Search capability added - Optional
+* Location integrated with Maps API - Optional
+* User can view profile of another user - Optional
+* End to End testing
+* Fixed performance issues
+* Final updates to git repo and project board
+* Marketing Video
+* Walkthrough Video
+* Presentation Slides
+* Team Dinner
+
+<img src="/images/final_sprint.gif" height="500">
 
 
 ## Schema 
