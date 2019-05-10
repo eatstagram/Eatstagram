@@ -28,23 +28,29 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 
 * [x]User can create a new account
 * [x]User can login
-* [ ]User can post a new photo of food
-* [ ]User can add details and location about the food
-* [ ]User can view a feed of food photos
-* [ ]User can like a food photo
-* [ ]User can add a comment to a photo
-* [ ]User can view details of a food photo they select
-* [ ]User can view all the pictures they uploaded on their profile
+* [x]User can post a new photo of food
+* [x]User can add details and location about the food
+* [x]User can view a feed of food photos (sorted by time of post)
+* [x]User can like a food photo
+* [x]User can add a comment to a photo. After adding, the list of comments is displayed sorted by time of comment.
+* [x]User can view location and details of a food photo they select
+* [x]User can view all the pictures they uploaded on their profile
 
 **Optional Nice-to-have Stories**
 
+* [ ]User can search for food based on information in Details field
+* [ ]User can search based on location of the post
+* [ ]User can see which food is available for purchase by the $ sign next to it
+* [ ]User's location is auto populated as default but can be edited by the user
+* [ ]User can upload their own profile picture
 * [ ]User can edit food details of food they had posted
 * [ ]User can delete food picture and details posted by the user
-* [ ]User can search for food or location
+* [ ]User can subscribe to food subscription monthly service
 * [ ]User can see notifications when their photo is liked
 * [ ]User can see a list of those who liked their photos
 * [ ]User can view other user’s profiles and see their photo feed
 * [ ]User can change Settings of the app
+* [ ]User can only post food pictures and their profile picture. Non-food pictures are not allowed when uploading new post. (Use machine learning for this feature)
 
 ### 2. Screen Archetypes
 
@@ -107,11 +113,41 @@ It is an iOS app that allows users to build a profile, users can post a picture 
 ### [BONUS] Interactive Prototype
 <img src="/images/interactiveI.gif" height="500">
 
-### Progress So Far
+### Progress So Far - Sprint 1
 * Users are able to create a new account.
 * Users are able to log in based on the account that has been created.
 
 <img src="/images/eatstagram.gif" height="500">
+
+### Progress So Far - Sprint 2
+* Database Design. Designed and tested the database dataflow on Firebase and it worked.
+
+<img src="/images/database_design.jpeg" height="500">
+
+* User is able to post a new photo and is able to upload photo to firebase database backend
+
+<img src="/images/eastagram_unit11_update.gif" height="500">
+
+### Progress So Far - Sprint 3
+* User can add details and location about the food
+* User can view a feed of food photos
+* User can like a food photo
+* User can add a comment to a photo
+* User can view details of a food photo they select
+* User can view all the pictures they uploaded on their profile
+
+<img src="/images/sprint3.gif" height="500">
+
+### Progress So Far - Sprint 4
+* Tweeked previous features to add:  sort post, sort comments, display time of post, display time of comment
+* Discussed plan for presentation
+* Discussed plan for video
+* Fixed performance issues such as displaying messages such as loading, etc. while the app is fulfilling user request
+* Discussed what optional features can be completed in time left
+
+<img src="/images/sprint4.gif" height="500">
+
+
 
 ## Schema 
 
