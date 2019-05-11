@@ -18,7 +18,7 @@ Walkthrough Video:  https://www.youtube.com/watch?v=0I5kMJMdK4U&t
 
 Marketing Video:  https://www.youtube.com/watch?v=rsKocTXWshU
 
-### Presentation: 
+### Presentation: https://docs.google.com/presentation/d/1aJl6LVSOzA7fEYftJ_8V1-vg9-CFrJwdK_LFsW2BtmY/edit?usp=sharing
 
 ### App Evaluation
 - **Category:** Food Photos Social Media
