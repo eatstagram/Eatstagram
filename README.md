@@ -8,17 +8,27 @@ Group Project - Eatstagram README
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
 
+
 ## Overview
+
 ### Description
 Eatstagram is an Instagram version for food.  
 It is an iOS app that allows users to build a profile, users can post a picture of foods, they can like pictures and make comments. Users can put the description of that food, and put the location where they take the pictures.
 
-### Eatstagram YouTube channel:  https://www.youtube.com/channel/UCAxD0kRuJMBpbx8AHOrKRuQ
+
+### Eatstagram YouTube channel:  
+
+https://www.youtube.com/channel/UCAxD0kRuJMBpbx8AHOrKRuQ
+
 Walkthrough Video:  https://www.youtube.com/watch?v=0I5kMJMdK4U&t
 
 Marketing Video:  https://www.youtube.com/watch?v=rsKocTXWshU
 
-### Presentation: https://docs.google.com/presentation/d/1aJl6LVSOzA7fEYftJ_8V1-vg9-CFrJwdK_LFsW2BtmY/edit?usp=sharing
+
+### Presentation: 
+
+https://docs.google.com/presentation/d/1aJl6LVSOzA7fEYftJ_8V1-vg9-CFrJwdK_LFsW2BtmY/edit?usp=sharing
+
 
 ### App Evaluation
 - **Category:** Food Photos Social Media
@@ -27,6 +37,7 @@ Marketing Video:  https://www.youtube.com/watch?v=rsKocTXWshU
 - **Market:** Anyone that loves foods and want to share with families and friends will enjoy this app. Market is focusing towards millienials but not limited to restaurants, home-made chefs, and users within other ages segments too.
 - **Habit:** Users can post througout the days for every foods that they eat and drinks. Most users nowadays are already doing this but are not posting it online. Our user interface will designed so that users will post all their photos.
 - **Scope:** Instagram is an amazing apps to share pictures, yet there are users that took photos of the foods and not posting it. Because of that, we want to build this App, so users can share what their eat or drink. At the same time, there are lots of others apps that locate restaurants based on your geo-locations but none suggest it based on user's social circle. Our App focusing on this niche needs.
+
 
 ## Product Spec
 ### 1. User Stories (Required and Optional)
